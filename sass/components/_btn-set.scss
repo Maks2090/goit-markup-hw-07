@@ -1,0 +1,37 @@
+
+.btn-set {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.btn-set__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-set__button {
+  display: inline-block;
+  min-width: 73px;
+  border-radius: 4px;
+  padding: 10px 22px;
+  
+  background-color: $tint-white-bg;
+  color: $primary-color;
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color; 
+  }
+   
+}
